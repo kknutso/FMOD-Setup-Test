@@ -18,6 +18,7 @@ public class FMODManager : MonoBehaviour
         instance.stop(mode);
         instance = RuntimeManager.CreateInstance("event:/" + trackName);
         instance.start();
+        instance.release();
         lastTrackPlayed = trackName;
     }
 
